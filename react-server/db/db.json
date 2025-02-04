@@ -1,0 +1,235 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "name1",
+      "lastName": "name2",
+      "email": "n@n.com",
+      "password": "12345",
+      "address": "address 1 5",
+      "phone": "0548654321"
+    },
+    {
+      "id": 1735048531744,
+      "email": "v@v.com",
+      "password": "123456",
+      "firstName": "rryyff",
+      "lastName": "12345",
+      "address": "mkm",
+      "phone": "098765432"
+    },
+    {
+      "id": 1735048561067,
+      "email": "r@r.com",
+      "password": "123456"
+    },
+    {
+      "id": 1735056076483,
+      "email": "g@g.com",
+      "password": "45678"
+    },
+    {
+      "id": 1735056158117,
+      "email": "g@f.c",
+      "password": "1223"
+    },
+    {
+      "id": 1735056199077,
+      "email": "ee",
+      "password": "1212"
+    },
+    {
+      "id": 1735056264012,
+      "email": "rut@gmail.com",
+      "password": "123456789",
+      "firstName": "nechama",
+      "lastName": "lerner",
+      "address": "bbb 3 4",
+      "phone": "098765432"
+    },
+    {
+      "id": 1735057311320,
+      "email": "yafa@gmail.com",
+      "password": "12345",
+      "firstName": "qwerty",
+      "lastName": "yyyy",
+      "address": "cfcfc",
+      "phone": "098765432"
+    },
+    {
+      "id": 1738078356337,
+      "email": "4",
+      "password": "4",
+      "firstName": "k",
+      "lastName": "k",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 1738084294716,
+      "email": "s@s.s",
+      "password": "1",
+      "firstName": "11111",
+      "lastName": "איזקוב",
+      "address": "עמוס 3",
+      "phone": "0527144087"
+    },
+    {
+      "id": 1738085877261,
+      "email": "n@b.v",
+      "password": "איזקוב",
+      "firstName": "jj",
+      "lastName": "איזקוב",
+      "address": "עמוס 3",
+      "phone": "0527144087"
+    },
+    {
+      "id": 1738442302985,
+      "email": "שדגכאעטיח",
+      "password": "דגכעי"
+    },
+    {
+      "id": 1738450496840,
+      "email": "",
+      "password": "dfghj",
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "phone": ""
+    },
+    {
+      "id": 1738450728945,
+      "email": "erfghj",
+      "password": "sdfghj"
+    },
+    {
+      "id": 1738450875489,
+      "email": "dfg",
+      "password": "sdfghj",
+      "firstName": "dfgs",
+      "lastName": "dfg",
+      "address": "dfgh",
+      "phone": "sdfgh"
+    },
+    {
+      "id": 1738450989238,
+      "email": "diti",
+      "password": "123"
+    },
+    {
+      "id": 1738451118992,
+      "email": "dfghj",
+      "password": "sdfgh"
+    },
+    {
+      "id": 1738537998526,
+      "email": "rrr@eee.eeeee",
+      "password": "ג",
+      "firstName": "o",
+      "lastName": "w",
+      "address": "w",
+      "phone": "w"
+    },
+    {
+      "id": 1738539484629,
+      "email": "SWS1112SSS@DD.D",
+      "password": "2"
+    },
+    {
+      "id": 1738608368410,
+      "email": "eee@eee0e.ee",
+      "password": "e"
+    },
+    {
+      "id": 1738615325513,
+      "email": "ddd@ddd.d",
+      "password": "1"
+    },
+    {
+      "id": 1738615517485,
+      "email": "eee@ww0w.w",
+      "password": "12"
+    },
+    {
+      "id": 1738616410136,
+      "email": "ssd@ee.ee",
+      "password": "123"
+    },
+    {
+      "id": 1738616869656,
+      "email": "sdf@sdff.dd",
+      "password": "12"
+    },
+    {
+      "id": 1738617288376,
+      "email": "sdfg@sdf.ddd",
+      "password": "dd"
+    },
+    {
+      "id": 1738617311952,
+      "email": "ertt@rrr.rrr",
+      "password": "tyyy"
+    },
+    {
+      "id": 1738617822181,
+      "email": "dddd@rrrr.rrr",
+      "password": "1111"
+    },
+    {
+      "id": 1738617834449,
+      "email": "edftgggfd@dfdd.sdffre",
+      "password": "12"
+    },
+    {
+      "id": 1738617981050,
+      "email": "ee@ee.e",
+      "password": "e"
+    },
+    {
+      "id": 1738618197614,
+      "email": "aaqqq@qqs.s",
+      "password": "s"
+    },
+    {
+      "id": 1738618311963,
+      "email": "asdfg2sdfv@dfg.dd",
+      "password": "11"
+    }
+  ],
+  "recipes": [
+    {
+      "id": 2,
+      "title": "Chicken Curry",
+      "description": "Spicy and flavorful chicken curry",
+      "authorId": 2,
+      "ingredients": [
+        "500g chicken breast",
+        "1 onion",
+        "2 cloves garlic",
+        "400ml coconut milk",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": "Heat the oil in a pan and sauté the chopped onion and garlic until golden. Add the chicken pieces and cook until browned. Stir in the curry powder and cook for another minute. Pour in the coconut milk and simmer for 20 minutes. Season with salt and pepper."
+    },
+    {
+      "id": 3,
+      "title": "Chocolate Cake",
+      "description": "Rich and moist chocolate cake",
+      "authorId": 3,
+      "ingredients": [
+        "200g flour",
+        "200g sugar",
+        "100g cocoa powder",
+        "1 tsp baking powder",
+        "1 tsp baking soda",
+        "2 eggs",
+        "240ml milk",
+        "120ml vegetable oil",
+        "2 tsp vanilla extract",
+        "240ml boiling water"
+      ],
+      "instructions": "Preheat the oven to 175°C (350°F). In a large bowl, mix the flour, sugar, cocoa powder, baking powder, and baking soda. Add the eggs, milk, oil, and vanilla extract, and mix until smooth. Gradually add the boiling water and mix until well combined. Pour the batter into a greased baking pan and bake for 30-35 minutes. Let cool before serving."
+    }
+  ]
+}

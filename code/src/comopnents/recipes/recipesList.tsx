@@ -1,13 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootStore } from "./store";
 import { useEffect } from "react";
-import { fetchRecipes } from "./RecipeSlice";
-import { Box, Typography, CircularProgress, Alert, ListItem } from "@mui/material";
+import { deleteRecipe, fetchRecipes } from "./RecipeSlice";
+import { Box, Typography, CircularProgress, Alert, ListItem, IconButton } from "@mui/material";
 import Add from "../Add";
 import RecipeStyle from "../styles/RecipeStyle";
 import { Link, Outlet } from "react-router-dom";
 import { FaUtensils } from "react-icons/fa"; 
-
+import Recipe from "../../types/recipeType";
+import {Delete} from "@mui/icons-material";
 
 export default () => {
     const dispatch = useDispatch<AppDispatch>();
@@ -15,6 +16,12 @@ export default () => {
     useEffect(() => {
         dispatch(fetchRecipes());
     }, [dispatch]);
+
+
+    const handleDelete = async (item: Recipe) => {
+        await dispatch(deleteRecipe({ recipeId: item.id, userId: item.authorId }));
+        await dispatch(fetchRecipes());
+    };
 
     if (loading) {
         return (
@@ -51,9 +58,26 @@ export default () => {
                     recipes.map((r, index) => (
                         <ListItem sx={{
                             textDecoration: "none",
-                            "&:hover": { bgcolor: "#e0e0e0", borderRadius: 1 }
+                            "&:hover": { bgcolor: "#9e9e9e", borderRadius: 1 }
                         }}
                             key={index}>
+                                
+                            <IconButton 
+                                sx={{ 
+                                    color: 'error.main', 
+                                    minWidth: 'auto', 
+                                    padding: '6px', 
+                                    '&:hover': { 
+                                        backgroundColor: 'error.light', 
+                                        color: 'white' 
+                                    } 
+                                }} 
+                                onClick={(e) => { 
+                                    e.stopPropagation(); 
+                                    handleDelete(r); 
+                                }}  >
+                                <Delete />
+                            </IconButton>
                             <Link to={`/recipes/${r.id}`} style={{ textDecoration: 'none', color: 'black' }}>
                                 {r.title}
                             </Link>                   

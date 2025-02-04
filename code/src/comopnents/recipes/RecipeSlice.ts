@@ -31,6 +31,26 @@ export const AddRecipes = createAsyncThunk('recipes/add', async (newRecipe: Reci
     }
 }
 );
+
+export const deleteRecipe = createAsyncThunk(
+    'recipes/delete',
+    async ({ recipeId, userId }: { recipeId: number; userId: number }, thunkApi) => {
+        try {
+            await axios.delete('http://localhost:3000/api/recipes', {
+                headers: { 'user-id': userId },
+                data: { id: recipeId }
+            });
+            return recipeId;
+        } catch (error) {
+            if (axios.isAxiosError(error)) {
+                return thunkApi.rejectWithValue(error.message); // מחזירים טקסט במקום אובייקט
+            }
+            return thunkApi.rejectWithValue('Failed to delete recipe');
+        }
+    }
+);
+
+
 const recipesSlice = createSlice({
     name: 'recipes',
     initialState: {
